@@ -32,5 +32,22 @@ public class Arraylist {
     public void setValue(int index, int value){
         elements[index] = value;
     }
+
+    public static void main(String[] args) {
+        Arraylist list = new Arraylist();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+
+        for(int i=0; i<list.index; i++) {
+            System.out.println(list.getValue(i));
+        }
+
+        list.setValue(1, 999);
+
+        for(int i=0; i<list.index; i++) {
+            System.out.println(list.getValue(i));
+        }
+    }
 }
 

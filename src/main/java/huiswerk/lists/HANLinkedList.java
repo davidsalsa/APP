@@ -1,12 +1,10 @@
 package huiswerk.lists;
 
-import sun.awt.image.ImageWatched;
-
 public class HANLinkedList<T> {
 
-    private LinkedListNode<Integer> first = null;
+    private LinkedListNode<T> first = null;
 
-    public void addFirst(LinkedListNode<Integer> node) {
+    public void addFirst(LinkedListNode<T> node) {
         node.setNext(first);
         first = node;
     }
@@ -18,30 +16,59 @@ public class HANLinkedList<T> {
     }
 
     public void insert(int index, LinkedListNode<T> node){
-        LinkedListNode<T> previousNode;
-        LinkedListNode<T> currentNode;
+        LinkedListNode<T> temp = node;
+        LinkedListNode<T> currentNode = first;
+
+        if(index==0){
+            temp.setNext(first);
+            this.first = temp;
+        } else {
+            for(int i=1; i<index;i++){
+                currentNode = currentNode.getNext();
+            }
+            temp.setNext(currentNode.getNext());
+            currentNode.setNext(temp);
+        }
     }
 
     public void delete (int index){
+        if (first == null)
+            return;
 
+        LinkedListNode temp = first;
+
+        if (index == 0) {
+            first = temp.getNext();   // Change head
+            return;
+        }
+
+        for (int i=0; temp!=null && i<index-1; i++)
+            temp = temp.getNext();
+
+        if (temp == null || temp.getNext() == null)
+            return;
+
+        LinkedListNode next = temp.getNext().getNext();
+
+        temp.setNext(next);
     }
 
-    public int get(int index){
+    public T get(int index){
 
-        LinkedListNode<Integer> current = first;
+        LinkedListNode<T> current = first;
         int count=0;
-        int value=0;
+        T value= current.getValue();
         while (current != null)
         {
             if (count == index)
-                value = current.getValue();
+                value =  current.getValue();
             count++;
             current = current.getNext();
         }
         return value;
     }
 
-    private void printList(LinkedListNode<Integer> node) {
+    private void printList(LinkedListNode<T> node) {
         System.out.println(node.getValue());
         if(node.getNext()!=null) printList(node.getNext());
     }
@@ -53,19 +80,24 @@ public class HANLinkedList<T> {
 
     public static void main(String[] args) {
 
-        HANLinkedList listInteger = new HANLinkedList();
-        listInteger.addFirst(new LinkedListNode<Integer>(1));
-        listInteger.addFirst(new LinkedListNode<Integer>(99));
-        listInteger.addFirst(new LinkedListNode<Integer>(3));
-        listInteger.addFirst(new LinkedListNode<Integer>(4));
-        listInteger.addFirst(new LinkedListNode<Integer>(6));
-        listInteger.insert(1, new LinkedListNode<Integer>(5));
-        listInteger.print();
-        listInteger.removeFirst();
+        HANLinkedList list = new HANLinkedList();
+        list.addFirst(new LinkedListNode<Integer>(1));
+        list.addFirst(new LinkedListNode<Integer>(3));
+        list.addFirst(new LinkedListNode<Integer>(4));
+        list.addFirst(new LinkedListNode<Integer>(6));
+        list.insert(1, new LinkedListNode<Integer>(5));
+        list.print();
+        list.removeFirst();
         System.out.println("After removing...");
-        listInteger.print();
+        list.print();
         System.out.println("get...");
-        System.out.println(listInteger.get(2));
+        System.out.println(list.get(2));
+        list.insert(3, new LinkedListNode<String>("Hello!"));
+        System.out.println("After inserting...");
+        list.print();
+        list.delete(1);
+        System.out.println("After delete...");
+        list.print();
     }
 
 }

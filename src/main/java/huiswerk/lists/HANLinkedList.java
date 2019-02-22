@@ -1,7 +1,5 @@
 package huiswerk.lists;
 
-import javax.enterprise.inject.New;
-
 public class HANLinkedList<T> {
 
     public LinkedListNode<T> first = null;
@@ -11,21 +9,21 @@ public class HANLinkedList<T> {
         first = node;
     }
 
-    public void removeFirst(){
-        if(first.getNext()!=null)
+    public void removeFirst() {
+        if (first.getNext() != null)
             first = first.getNext();
         else first = null;
     }
 
-    public void insert(int index, LinkedListNode<T> node){
+    public void insert(int index, LinkedListNode<T> node) {
         LinkedListNode<T> temp = node;
         LinkedListNode<T> currentNode = first;
 
-        if(index==0){
+        if (index == 0) {
             temp.setNext(first);
             this.first = temp;
         } else {
-            for(int i=1; i<index;i++){
+            for (int i = 1; i < index; i++) {
                 currentNode = currentNode.getNext();
             }
             temp.setNext(currentNode.getNext());
@@ -33,7 +31,7 @@ public class HANLinkedList<T> {
         }
     }
 
-    public void delete (int index){
+    public void delete(int index) {
         if (first == null)
             return;
 
@@ -44,7 +42,7 @@ public class HANLinkedList<T> {
             return;
         }
 
-        for (int i=0; temp!=null && i<index-1; i++)
+        for (int i = 0; temp != null && i < index - 1; i++)
             temp = temp.getNext();
 
         if (temp == null || temp.getNext() == null)
@@ -55,15 +53,14 @@ public class HANLinkedList<T> {
         temp.setNext(next);
     }
 
-    public T get(int index){
+    public T get(int index) {
 
         LinkedListNode<T> current = first;
-        int count=0;
-        T value= current.getValue();
-        while (current != null)
-        {
+        int count = 0;
+        T value = current.getValue();
+        while (current != null) {
             if (count == index)
-                value =  current.getValue();
+                value = current.getValue();
             count++;
             current = current.getNext();
         }
@@ -72,10 +69,10 @@ public class HANLinkedList<T> {
 
     private void printList(LinkedListNode<T> node) {
         System.out.println(node.getValue());
-        if(node.getNext()!=null) printList(node.getNext());
+        if (node.getNext() != null) printList(node.getNext());
     }
 
-    public void print(){
+    public void print() {
         printList(first);
     }
 
@@ -133,39 +130,42 @@ class LinkedListNode<T> {
     }
 }
 
- class HANStack<T> {
+class HANStack<T> {
 
     private HANLinkedList list;
 
-    public HANStack(HANLinkedList list){
+    public HANStack(HANLinkedList list) {
         this.list = list;
     }
 
-    public T push(T value){
+    public T push(T value) {
         list.addFirst(new LinkedListNode(value));
         T pushedItem = (T) list.get(getSize());
         return pushedItem;
     }
 
-    public T pop(){
+    public T pop() {
+        if(list.first == null)
+            return null;
+
         T removedItem = (T) list.get(getSize());
         list.removeFirst();
         return removedItem;
-    };
+    }
 
-    public T top(){
+    public T top() {
         return (T) list.get(getSize());
-    };
+    }
 
-    public int getSize(){
-        LinkedListNode<T> node =list.first;
-        int count=1;
+    public int getSize() {
+        LinkedListNode<T> node = list.first;
+        int count = 1;
 
-        while(node.getNext() != null){
+        while (node.getNext() != null) {
             count++;
             node = node.getNext();
         }
 
         return count;
-    };
+    }
 }

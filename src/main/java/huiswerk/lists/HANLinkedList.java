@@ -1,5 +1,7 @@
 package huiswerk.lists;
 
+import javax.enterprise.inject.New;
+
 public class HANLinkedList<T> {
 
     public LinkedListNode<T> first = null;
@@ -79,8 +81,8 @@ public class HANLinkedList<T> {
 
 
     public static void main(String[] args) {
-        HANStack hanStack = new HANStack();
         HANLinkedList list = new HANLinkedList();
+        HANStack hanStack = new HANStack(list);
 
         list.addFirst(new LinkedListNode<Integer>(1));
         list.addFirst(new LinkedListNode<Integer>(3));
@@ -100,9 +102,11 @@ public class HANLinkedList<T> {
         System.out.println("After delete...");
         list.print();
         System.out.println("count...");
-        System.out.println(hanStack.getSize(list));
+        System.out.println(hanStack.getSize());
         System.out.println("top...");
-        System.out.println(hanStack.top(list));
+        System.out.println(hanStack.top());
+        System.out.println(hanStack.pop());
+        System.out.println(hanStack.push(69));
 
     }
 
@@ -127,4 +131,41 @@ class LinkedListNode<T> {
     public T getValue() {
         return value;
     }
+}
+
+ class HANStack<T> {
+
+    private HANLinkedList list;
+
+    public HANStack(HANLinkedList list){
+        this.list = list;
+    }
+
+    public T push(T value){
+        list.addFirst(new LinkedListNode(value));
+        T pushedItem = (T) list.get(getSize());
+        return pushedItem;
+    }
+
+    public T pop(){
+        T removedItem = (T) list.get(getSize());
+        list.removeFirst();
+        return removedItem;
+    };
+
+    public T top(){
+        return (T) list.get(getSize());
+    };
+
+    public int getSize(){
+        LinkedListNode<T> node =list.first;
+        int count=1;
+
+        while(node.getNext() != null){
+            count++;
+            node = node.getNext();
+        }
+
+        return count;
+    };
 }

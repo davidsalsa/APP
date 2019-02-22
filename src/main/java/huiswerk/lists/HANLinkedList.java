@@ -2,7 +2,7 @@ package huiswerk.lists;
 
 public class HANLinkedList<T> {
 
-    private LinkedListNode<T> first = null;
+    public LinkedListNode<T> first = null;
 
     public void addFirst(LinkedListNode<T> node) {
         node.setNext(first);
@@ -79,8 +79,9 @@ public class HANLinkedList<T> {
 
 
     public static void main(String[] args) {
-
+        HANStack hanStack = new HANStack();
         HANLinkedList list = new HANLinkedList();
+
         list.addFirst(new LinkedListNode<Integer>(1));
         list.addFirst(new LinkedListNode<Integer>(3));
         list.addFirst(new LinkedListNode<Integer>(4));
@@ -98,6 +99,11 @@ public class HANLinkedList<T> {
         list.delete(1);
         System.out.println("After delete...");
         list.print();
+        System.out.println("count...");
+        System.out.println(hanStack.getSize(list));
+        System.out.println("top...");
+        System.out.println(hanStack.top(list));
+
     }
 
 }

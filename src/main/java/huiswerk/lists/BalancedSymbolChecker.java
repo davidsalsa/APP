@@ -8,6 +8,9 @@ public class BalancedSymbolChecker {
 
         HANStack hanStack = new HANStack(list);
         for (int i = 0; i < symbol.length(); i++) {
+            if (symbol.charAt(i) == ')' && list.first==null) {
+                return false;
+            }
             if (symbol.charAt(i) == '(') {
                 hanStack.push("(");
             }

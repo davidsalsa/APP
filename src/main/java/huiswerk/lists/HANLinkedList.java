@@ -85,7 +85,7 @@ public class HANLinkedList<T> {
         list.addFirst(new LinkedListNode<Integer>(3));
         list.addFirst(new LinkedListNode<Integer>(4));
         list.addFirst(new LinkedListNode<Integer>(6));
-        list.insert(1, new LinkedListNode<Integer>(5));
+        list.insert(2, new LinkedListNode<Integer>(5));
         list.print();
         list.removeFirst();
         System.out.println("After removing...");
@@ -145,10 +145,14 @@ class HANStack<T> {
     }
 
     public T pop() {
-        if(list.first == null)
-            return null;
+        T removedItem;
 
-        T removedItem = (T) list.get(getSize());
+        if(list.first == null) {
+            removedItem = null;
+        } else {
+            removedItem = (T) list.get(getSize());
+        }
+
         list.removeFirst();
         return removedItem;
     }

@@ -32,5 +32,4 @@ public class BalancedSymbolChecker {
         System.out.println(balancedSymbolChecker.checker(symbolBalanced2));
         System.out.println(balancedSymbolChecker.checker(symbolUnbalanced));
     }
-
 }

@@ -1,5 +1,6 @@
 package huiswerk.graphsAndPaths;
 
+import java.nio.file.Path;
 import java.util.*;
 
 public class Graph {
@@ -38,6 +39,10 @@ public class Graph {
         }
 
         return arrayToString.toString();
+    }
+
+    public void dijkstra(String startName){
+
     }
 
     public static void main(String[] args) {

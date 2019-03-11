@@ -1,30 +1,16 @@
 package huiswerk.trees;
 
-class BinarySearchTree {
-    class Node {
-        int key;
-        Node left, right;
-
-        public Node(int item) {
-            key = item;
-            left = right = null;
-        }
-    }
-
-    // Root of BST
+public class BinarySearchTree {
     Node root;
 
-    // Constructor
     BinarySearchTree() {
         root = null;
     }
 
-    // This method mainly calls insertRec()
     void insert(int key) {
         root = insertRec(root, key);
     }
 
-    /* A recursive function to insert a new key in BST */
     Node insertRec(Node root, int key) {
 
         /* If the tree is empty, return a new node */
@@ -43,17 +29,27 @@ class BinarySearchTree {
         return root;
     }
 
-    // This method mainly calls InorderRec()
-    void inorder() {
-        inorderRec(root);
+    void inOrder(Node root) {
+        if (root != null) {
+            inOrder(root.left);
+            System.out.println(root.key);
+            inOrder(root.right);
+        }
     }
 
-    // A utility function to do inorder traversal of BST
-    void inorderRec(Node root) {
-        if (root != null) {
-            inorderRec(root.left);
-            System.out.println(root.key);
-            inorderRec(root.right);
+    public void preOrder(Node node) {
+        if (node != null) {
+            System.out.println(" " + node.key);
+            preOrder(node.left);
+            preOrder(node.right);
+        }
+    }
+
+    public void postOrder(Node node) {
+        if (node != null) {
+            postOrder(node.left);
+            postOrder(node.right);
+            System.out.println(" " + node.key);
         }
     }
 
@@ -100,10 +96,21 @@ class BinarySearchTree {
         tree.insert(80);
 
         // print inorder traversal of the BST
-        tree.inorder();
+
+        tree.preOrder(tree.root);
 
         System.out.println(tree.find(tree.root, 20));
         System.out.println(tree.findMax(tree.root));
         System.out.println(tree.findMin(tree.root));
+    }
+}
+
+class Node {
+    int key;
+    Node left, right;
+
+    public Node(int item) {
+        key = item;
+        left = right = null;
     }
 }

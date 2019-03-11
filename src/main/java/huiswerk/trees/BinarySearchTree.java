@@ -1,6 +1,6 @@
 package huiswerk.trees;
 
-public class BinarySearchTree{
+public class BinarySearchTree<T> {
     Node root;
 
     BinarySearchTree() {
@@ -83,13 +83,6 @@ public class BinarySearchTree{
         return root.key;
     }
 
-    //public static BinarySearchTree fromSortedArray(int[] input);
-
-    public void insertArray(int[] array){
-        for(int i =0; i<array.length; i++){
-            insertRec(root, array[i]);
-        }
-    }
 
     public static void main(String[] args) {
         BinarySearchTree tree = new BinarySearchTree();

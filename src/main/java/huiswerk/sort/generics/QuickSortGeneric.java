@@ -1,28 +1,28 @@
-package huiswerk.sort;
+package huiswerk.sort.generics;
 
-public class QuickSort {
-    int partition(int arr[], int low, int high)
+public class QuickSortGeneric<AnyType extends Comparable<? super AnyType>> {
+    <T extends Comparable<T>> int partition(T arr[], int low, int high)
     {
         int median3 = (low + high + (high/2))/3;
-        int pivot = arr[median3];
+        T pivot = arr[median3];
         int i = (low-1); // index of smaller element
         for (int j=low; j<high; j++)
         {
             // If current element is smaller than or
             // equal to pivot
-            if (arr[j] <= pivot)
+            if ( pivot.compareTo(arr[j])>= 1)
             {
                 i++;
 
                 // swap arr[i] and arr[j]
-                int temp = arr[i];
+                T temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
             }
         }
 
         // swap arr[i+1] and arr[high] (or pivot)
-        int temp = arr[i+1];
+        T temp = arr[i+1];
         arr[i+1] = arr[high];
         arr[high] = temp;
 
@@ -34,7 +34,7 @@ public class QuickSort {
       arr[] --> Array to be sorted,
       low  --> Starting index,
       high  --> Ending index */
-    void sort(int arr[], int low, int high)
+    public <T extends Comparable<T>> void sort(T arr[], int low, int high)
     {
         if (low < high)
         {

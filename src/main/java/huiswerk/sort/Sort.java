@@ -1,10 +1,13 @@
 package huiswerk.sort;
+import huiswerk.sort.generics.InsertionSortGeneric;
+import huiswerk.sort.generics.QuickSortGeneric;
+
 
 import java.util.Arrays;
 
-public class Sort {
-
+public class Sort<T>{
     public static void main(String[] args) {
+
 
         int[]a = {8, 1, 4, 1, 5, 9, 2, 6, 5};
         InsertionSort insertionSort = new InsertionSort();
@@ -21,5 +24,14 @@ public class Sort {
         quickSort.sort(c, 0, c.length-1);
         System.out.println(Arrays.toString(c));
 
+        Integer [] d = {8, 1, 4, 1, 5, 9, 2, 6, 5};
+        InsertionSortGeneric insertionSortGeneric = new InsertionSortGeneric();
+        insertionSortGeneric.insertionSort(d);
+        System.out.println(Arrays.toString(d));
+
+        Integer[] e = {8, 1, 4, 1, 5, 9, 2, 6, 5};
+        QuickSortGeneric quickSortGeneric = new QuickSortGeneric();
+        quickSortGeneric.sort(e, 0, c.length-1);
+        System.out.println(Arrays.toString(e));
     }
 }

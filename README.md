@@ -226,3 +226,10 @@ Voor de programmeer uitdaging had ik het gevoel dat ik veel meer moeite zou hebb
 Ik had hierbij het voordeel dat Scala niet alleen functioneel programmeren, maar ook object geörienteerd programmeren ondersteunt.
 De gedachtegang achter het programmeren van de bst is hetzelfde omdat het in beide talen object geörienteerd geprogrammeerd is.
 Ik vind scala ook mooi omdat de syntaxis ervoor zorgt dat je in vergelijking met Java veel regels code kan besparen.
+
+Voordat ik was begonnen met het programmeren in Scala heb ik eerste een paar filmpjes gekeken en de documentatie bekeken van Scala.
+Ik vond bijvoorbeeld het definiëren van de constructor als parameter van een klasse vreemd en wist niet zo goed wat voor een voordelen het te bieden had.
+Ik had echt niet verwacht dat ik het eigenlijk best fijn zou vinden nadat ik er mee gewerkt heb.
+
+Al met al vond ik de uitdaging niet te uitdagend, het koste zeker wat tijd om wat dingen uit te zoeken, maar een goed begin om Scala te leren. 
+Er zijn nog héél veel aspecten van Scala die ik nog niet ben tegengekomen, maar al met al heb ik een positieve indruk gekregen van Scala.

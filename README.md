@@ -105,6 +105,8 @@ Ik was in het begin verward over hoe ik mijn code moest runnen in Scala.
 Nu dat ik dit weet is het eigenlijk heel simpel.
 Ik heb niet echt een voorkeur voor de Java (binnen een klasse) of Scala manier (binnen een object).
 
+De scala code is hier te vinden: huiswerk/trees/BinarySearchTreeScala.scala
+
 ### Uitwerking
 In dit deel van mijn blog zal ik wat vertellen over de geschreven code in Scala.
 

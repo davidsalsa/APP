@@ -238,3 +238,9 @@ Ik had echt niet verwacht dat ik het eigenlijk best fijn zou vinden nadat ik er 
 
 Al met al vond ik de uitdaging niet te uitdagend, het koste zeker wat tijd om wat dingen uit te zoeken, maar een goed begin om Scala te leren. 
 Er zijn nog héél veel aspecten van Scala die ik nog niet ben tegengekomen, maar al met al heb ik een positieve indruk gekregen van Scala.
+
+
+# Feedback Sander
+
+-- Wat zeggen over geneste functies (meer functioneel)
+-- Constructor MEEGEVEN vaag? meer in de woorden van Scala devs

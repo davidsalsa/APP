@@ -1,5 +1,5 @@
 David Salsbach
-#Blogpost BST in Java vs Scala
+# Blogpost BST in Scala uitdaging
 
 Om een nieuwe programmeertaal te leren doe ik mee aan een programmeer uitdaging. 
 Ik heb een van de talen uitgekozen uit het boek 'Seven Languages in seven weeks'.
@@ -12,7 +12,7 @@ Mijn programmeerchallenge luidt als volgt:
 
 Ter controle moet de BST inOrder, preOrder en postOrder gesorteerd kunnen worden.
 
-###Toelichting van de challenge:
+### Toelichting van de challenge:
 
 Ik vind dat deze challenge voldoet aan de eisen van de programmeerchallenge. 
 
@@ -22,7 +22,7 @@ Scala is een object geörienteerde taal, maar daarnaast is het ook nog een funct
 Daarom denk ik dat het voor mij een uitdaging wordt om met deze taal aan de slag te gaan.
 
 
-###Verschillen tussen Java en Scala
+### Verschillen tussen Java en Scala
 Een van de grootste verschillen tussen Java en Scala dat mij is opgevallen is dat je in Scala de constructor meegeeft  als parameter in een klasse.
 Hieronder is een codevoorbeeld hiervan. 
 ```  
@@ -97,7 +97,7 @@ Ik was in het begin verward over hoe ik mijn code moest runnen in Scala.
 Nu dat ik dit weet is het eigenlijk heel simpel.
 Ik heb niet echt een voorkeur voor de Java (binnen een klasse) of Scala manier (binnen een object).
 
-###Uitwerking
+### Uitwerking
 In dit deel van mijn blog zal ik wat vertellen over de geschreven code in Scala.
 
 Hieronder zie je de Node klasse. 

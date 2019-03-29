@@ -1,6 +1,9 @@
 David Salsbach
 # Blogpost BST in Scala uitdaging
 
+![Image](https://upload.wikimedia.org/wikipedia/en/8/85/Scala_logo.png)
+
+
 Om een nieuwe programmeertaal te leren doe ik mee aan een programmeer uitdaging. 
 Ik heb een van de talen uitgekozen uit het boek 'Seven Languages in seven weeks'.
 In deze blog zal ik het hebben over mijn uitdaging en wat vertellen over syntaxis, semantiek, pragmatiek en paradigma's van Scala 

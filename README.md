@@ -50,6 +50,8 @@ class Node {
     }
 } 
 ```
+De Scala manier bespaart onnodige regels code, dit vind ik eigenlijk al een stuk beter dan de Java manier.
+
 Verder zijn er nog kleine syntax verschillen tussen Scala en Java. Die leg ik hieronder uit.
 
 ```
@@ -117,8 +119,12 @@ Daarnaast  wordt een auxiliary constructor gedefiniëert die alleen de key als i
 ```
 
 Hieronder een recursieve methode om aan de Binary Search Trees waarden toe te voegen.
-Dit heeft wel veel weg van de java code, op de syntax na.
+Dit heeft wel veel weg van de java code, op syntaxis na.
 
+Er wordt gebruik gemaakt van recursie. 
+De base case is als de root leeg is wordt er een nieuwe root aangemaakt,
+Als een root bestaat wordt er gekeken of de nieuwe waarde kleiner (links) of groter (rechts) is van de root.
+De methode roept zichzelf aan totdat er een lege childnode wordt gevonden waar de nieuwe key in kan.
 ```
  def insert(key:Int): Unit ={ //Insert calls recursive
     root = insertRec(root, key)
@@ -142,7 +148,10 @@ Dit heeft wel veel weg van de java code, op de syntax na.
 
 
 Hieronder is de functie dat zoekt naar een node binnen de boom met een bepaalde waarde.
-Als de node bestaat wordt die vervolgens geretourneerd.
+Als de node bestaat wordt die vervolgens geretourneerd. 
+
+Ook is dit behalve syntaxis niet verschillend van Java.
+Dat is ook logisch aangezien dit ook weer op een object georiënteerde manier uitgeprogrammeerd is.
 
 ```
   def findRec(root:Node,key: Int): Node = { //find node with matching value
@@ -151,6 +160,9 @@ Als de node bestaat wordt die vervolgens geretourneerd.
     node
   }
 ```
+
+Voor de inOrder, preOrder en postOrder methoden geldt dat er weinig inhoudelijk verschil is met Java.
+Er wordt gebruik gemaakt van recursie om de roots op een bepaalde volgorde te printen. 
 
 ```
   def inOrder(root: Node): Unit = {
@@ -180,6 +192,9 @@ Als de node bestaat wordt die vervolgens geretourneerd.
  
 ```
 
+Zoals eerder verteld wordt de main methoden niet binnen de klasse gedefiniëerd, maar in een singleton object.
+Hier wordt alle code uitgevoerd. 
+
 ```
 object App{
   def main(args: Array[String]): Unit = { //main
@@ -205,3 +220,9 @@ object App{
   }
 ```
 
+### Conclusie
+
+Voor de programmeer uitdaging had ik het gevoel dat ik veel meer moeite zou hebben met Scala.
+Ik had hierbij het voordeel dat Scala niet alleen functioneel programmeren, maar ook object geörienteerd programmeren ondersteunt.
+De gedachtegang achter het programmeren van de bst is hetzelfde omdat het in beide talen object geörienteerd geprogrammeerd is.
+Ik vind scala ook mooi omdat de syntaxis ervoor zorgt dat je in vergelijking met Java veel regels code kan besparen.

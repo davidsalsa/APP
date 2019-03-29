@@ -1,5 +1,7 @@
 package huiswerk.trees;
 
+import javax.sound.midi.SysexMessage;
+
 public class BinarySearchTree<T> {
     Node root;
 
@@ -87,7 +89,7 @@ public class BinarySearchTree<T> {
     public static void main(String[] args) {
         BinarySearchTree tree = new BinarySearchTree();
 
-        int[] array = {1, 3, 8, 10, 19, 22, 32};
+        int[] array = {1, 3, 8, 10, 19,  22, 32};
 
         tree.insert(70);
         tree.insert(30);
@@ -99,11 +101,16 @@ public class BinarySearchTree<T> {
 
         // print inorder traversal of the BST
 
+        System.out.println("inOrder:");
+        tree.inOrder(tree.root);
+        System.out.println("preOrder:");
         tree.preOrder(tree.root);
+        System.out.println("postOrder:");
+        tree.postOrder(tree.root);
+
 
         System.out.println(tree.find(tree.root, 20));
-        System.out.println(tree.findMax(tree.root));
-        System.out.println(tree.findMin(tree.root));
+
     }
 }
 

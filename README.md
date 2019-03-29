@@ -20,8 +20,11 @@ Ter controle moet de BST inOrder, preOrder en postOrder gesorteerd kunnen worden
 Ik vind dat deze challenge voldoet aan de eisen van de programmeerchallenge. 
 
 De Binary Search Tree is op zich zelf een redelijk simpele datastructuur, 
-maar Scala is een programmeertaal die volledig onbekend voor mij is.
-Scala is een object geörienteerde taal, maar daarnaast is het ook nog een functionele programmeertaal.
+maar Scala is een object geörienteerde en functionele programmeertaal die volledig onbekend voor mij is.
+In de eerste instantie lijkt de syntaxis ook erg verschillend van Java.
+Scala heeft veel verschillende manieren om efficiënter code te schrijven, dat is een van de primaire verkooppunten.
+
+![Image](https://1.bp.blogspot.com/-PL46dZDlB5U/WmXos5dFN4I/AAAAAAAAKL8/mNLo82-R0lYCwPQzjJyDvDk6UZbZ_4BaACLcBGAs/s400/Java%2Bvs%2BScala%2BCode.png)
 Daarom denk ik dat het voor mij een uitdaging wordt om met deze taal aan de slag te gaan.
 
 

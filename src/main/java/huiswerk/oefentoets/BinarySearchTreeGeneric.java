@@ -1,8 +1,6 @@
 package huiswerk.oefentoets;
 
-import huiswerk.sort.QuickSort;
 import huiswerk.sort.generics.QuickSortGeneric;
-import huiswerk.trees.BinarySearchTree;
 
 public class BinarySearchTreeGeneric<T extends Comparable<? super T>>{
    static Node root;
@@ -109,7 +107,7 @@ public class BinarySearchTreeGeneric<T extends Comparable<? super T>>{
         QuickSortGeneric sort = new QuickSortGeneric();
         sort.sort(input, 0, input.length-1);
         root = treeFromArray.sortedArrayToBST(input, 0, input.length -1 );
-        treeFromArray.inOrder(root);
+        treeFromArray.preOrder(root);
         return treeFromArray;
     }
 

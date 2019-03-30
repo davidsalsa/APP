@@ -2,32 +2,32 @@ package huiswerk.trees
 
 class BinarySearchTreeScala(){
 
-  class Node(var key:Int, var left:Node, var right:Node){ //Constructor
-    def this(key:Int){this(key,null,null)} //Aux constructor with 1 param
+  class Node(var key:Int){ //Constructor
+    var left:Node = null
+    var right:Node = null
   }
 
 
   var root:Node = null //root node
 
-  def insert(key:Int): Unit ={ //Insert calls recursive
+  def insert(key:Int): Unit = { //Insert calls recursive
     root = insertRec(root, key)
-  }
 
-  def insertRec(root:Node, key:Int): Node ={ //recursive insert
-    var node = root
+    def insertRec(root: Node, key: Int): Node = { //recursive insert
+      var node = root
 
-    if (root == null) {
-      node = new Node(key)
-      return node
+      if (root == null) {
+        node = new Node(key)
+        return node
+      }
+      if (key < node.key)
+        node.left = insertRec(node.left, key)
+      else if (key > node.key)
+        node.right = insertRec(root.right, key)
+
+      node
     }
-    if (key < node.key)
-      node.left = insertRec(node.left, key)
-    else if (key > node.key)
-      node.right = insertRec(root.right, key)
-
-    node
   }
-
 
   def findRec(root:Node,key: Int): Node = { //find node with matching value
     var node = root

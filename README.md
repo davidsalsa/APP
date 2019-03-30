@@ -17,28 +17,29 @@ Ter controle moet de BST inOrder, preOrder en postOrder gesorteerd kunnen worden
 
 ### Toelichting van de challenge:
 
-Ik vind dat deze challenge voldoet aan de eisen van de programmeerchallenge. 
-
 De Binary Search Tree is op zich zelf een redelijk simpele datastructuur, 
 maar Scala is een object geörienteerde en functionele programmeertaal die volledig onbekend voor mij is.
 In de eerste instantie lijkt de syntaxis ook erg verschillend van Java.
-Scala heeft veel verschillende manieren om efficiënter code te schrijven, dat is een van de primaire verkooppunten.
 
-![Image](https://1.bp.blogspot.com/-PL46dZDlB5U/WmXos5dFN4I/AAAAAAAAKL8/mNLo82-R0lYCwPQzjJyDvDk6UZbZ_4BaACLcBGAs/s400/Java%2Bvs%2BScala%2BCode.png)
 Daarom denk ik dat het voor mij een uitdaging wordt om met deze taal aan de slag te gaan.
 
-
 ### Verschillen tussen Java en Scala
-Een van de grootste verschillen tussen Java en Scala dat mij is opgevallen is dat je in Scala de constructor meegeeft  als parameter in een klasse.
+Scala heeft veel verschillende manieren om efficiënter code te schrijven, dat is een van de primaire verkooppunten.
+Hieronder in de afbeelding is een voorbeeld van het programmeren van een wordcount in Java vs Scala.
+Links is de Java code en Rechts is de Scala code.
+Je kan zien dat het niet alleen minder code kost, maar ook veel efficiënter is zonder de while loop en object instanties. 
+
+![Image](https://1.bp.blogspot.com/-PL46dZDlB5U/WmXos5dFN4I/AAAAAAAAKL8/mNLo82-R0lYCwPQzjJyDvDk6UZbZ_4BaACLcBGAs/s400/Java%2Bvs%2BScala%2BCode.png)
+
+Een van de grootste verschillen tussen Java en Scala dat mij is opgevallen is dat je de constructor in de body van de class definiëert, 
+de parameters van de constructor vind je naast de klassenaam.
 Hieronder is een codevoorbeeld hiervan. 
 ```  
-class Node(var key:Int, var left:Node, var right:Node){ //Constructor
-      def this(key:Int){this(key,null,null)} //Aux constructor with 1 param
-    }
+  class Node(var key:Int){ //Constructor with class
+    var left:Node = null
+    var right:Node = null
+  }
 ```
-
-Als je niet alle parameters wil invullen bij het instantiëren van de klasse kan je een auxiliary constructor definiëren met default waarden voor de klasse parameters.
-
 
 Hieronder is een code voorbeeld van een Java constructor binnen een klasse.
 
@@ -124,31 +125,31 @@ Daarnaast  wordt een auxiliary constructor gedefiniëert die alleen de key als i
 ```
 
 Hieronder een recursieve methode om aan de Binary Search Trees waarden toe te voegen.
-Dit heeft wel veel weg van de java code, op syntaxis na.
+Hier wordt gebruik gemaakt van nested functions. Nested functions worden niet ondersteund door java,
+maar worden wel door Scala ondersteund.
 
-Er wordt gebruik gemaakt van recursie. 
-De base case is als de root leeg is wordt er een nieuwe root aangemaakt,
+Als de root leeg is wordt er een nieuwe root aangemaakt.
 Als een root bestaat wordt er gekeken of de nieuwe waarde kleiner (links) of groter (rechts) is van de root.
 De methode roept zichzelf aan totdat er een lege childnode wordt gevonden waar de nieuwe key in kan.
 ```
- def insert(key:Int): Unit ={ //Insert calls recursive
-    root = insertRec(root, key)
-  }
-
-  def insertRec(root:Node, key:Int): Node ={ //recursive insert
-    var node = root
-
-    if (root == null) {
-      node = new Node(key)
-      return node
-    }
-    if (key < node.key) 
-     node.left = insertRec(node.left, key) 
-    else if (key > node.key)
-      node.right = insertRec(root.right, key)
-
-    node
-  }
+   def insert(key:Int): Unit = { //Insert calls recursive
+     root = insertRec(root, key)
+ 
+     def insertRec(root: Node, key: Int): Node = { //recursive insert
+       var node = root
+ 
+       if (root == null) {
+         node = new Node(key)
+         return node
+       }
+       if (key < node.key)
+         node.left = insertRec(node.left, key)
+       else if (key > node.key)
+         node.right = insertRec(root.right, key)
+ 
+       node
+     }
+   }
 ```
 
 
@@ -229,7 +230,7 @@ object App{
 
 Voor de programmeer uitdaging had ik het gevoel dat ik veel meer moeite zou hebben met Scala.
 Ik had hierbij het voordeel dat Scala niet alleen functioneel programmeren, maar ook object geörienteerd programmeren ondersteunt.
-De gedachtegang achter het programmeren van de bst is hetzelfde omdat het in beide talen object geörienteerd geprogrammeerd is.
+De gedachtegang achter het programmeren van de Binary Search Tree is hetzelfde omdat het in beide talen object geörienteerd geprogrammeerd is.
 Ik vind scala ook mooi omdat de syntaxis ervoor zorgt dat je in vergelijking met Java veel regels code kan besparen.
 
 Voordat ik was begonnen met het programmeren in Scala heb ik eerste een paar filmpjes gekeken en de documentatie bekeken van Scala.
@@ -238,9 +239,3 @@ Ik had echt niet verwacht dat ik het eigenlijk best fijn zou vinden nadat ik er 
 
 Al met al vond ik de uitdaging niet te uitdagend, het koste zeker wat tijd om wat dingen uit te zoeken, maar een goed begin om Scala te leren. 
 Er zijn nog héél veel aspecten van Scala die ik nog niet ben tegengekomen, maar al met al heb ik een positieve indruk gekregen van Scala.
-
-
-# Feedback Sander
-
--- Wat zeggen over geneste functies (meer functioneel)
--- Constructor MEEGEVEN vaag? meer in de woorden van Scala devs

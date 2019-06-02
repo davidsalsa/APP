@@ -9,7 +9,6 @@ public class FamilyTree {
     public FamilyTree() {
     }
 
-
     public static FamilyTree createSampleFamilyTree() {
         // Instantieer personen
         Person adam = new Person("Adam");
@@ -84,36 +83,57 @@ public class FamilyTree {
 
     // Opgave 1
     public Person find(String name) {
-        if (root == null) {
+        Person person = root;
+        if (person == null) {
             return null;
         }
 
-        if (!name.equals(root.getName())){
-            root = findPerson(root, name);
-        }
+        person = findPerson(person, name, null);
 
-
-        return root;
+        return person;
     }
 
-    public Person findPerson(Person root, String name) {
-        if (root.getChildren() != null) {
-            for (int i = 0; i < root.getChildren().size(); i++) {
-                root = root.getChildren().get(i);
+    private Person findPerson(Person root, String name, Person res) {
+        if(!name.equals(root.getName())) {
+            for (Person child : root.getChildren()) {
+                res = findPerson(child, name, res);
+            }
+        } else res = root;
+
+        if(root.getPartner()!=null){
+            if (name.equals(root.getPartner().getName())) {
+                res = root.getPartner();
             }
         }
-        return root;
+
+        return res;
     }
 
     // Opgave 2
     public Person findParent(String name) {
-        throw new UnsupportedOperationException();
+        Person person = root;
+        if (person == null) {
+            return null;
+        }
+
+        person = findParent(person, name, null);
+
+        return person;
+    }
+
+    private Person findParent(Person root, String name, Person res){
+        for(Person child : root.getChildren()){
+            if(child.equals(findPerson(root, name, res))){
+                res = root;
+            } else res = findParent(child, name, res);
+        }
+        return res;
     }
 
 
     // Opgave 3
     public String toLevelOrderString() {
-        if(root.getChildren()!=null){
+        if (root.getChildren() != null) {
 
         }
 
@@ -122,9 +142,25 @@ public class FamilyTree {
 
     // Opgave 4
     public ArrayList<Person> findAncestors(String name) {
-        throw new UnsupportedOperationException();
+        Person person = root;
+        ArrayList<Person> ancestors = new ArrayList<>();
+        if (person == null) {
+            return null;
+        }
+
+        ancestors = findAncestorsRec(root, name, ancestors);
+
+        return ancestors;
     }
 
+    private ArrayList<Person> findAncestorsRec(Person root, String name, ArrayList<Person> ancestors){
+        if(findParent(name) != null) {
+            Person parent = findParent(name);
+            ancestors.add(parent);
+            ancestors = findAncestorsRec(parent, parent.getName(), ancestors);
+        }
+        return ancestors;
+    }
 
     public static void main(String[] args) {
         System.out.println("** Opgave 0 **");
@@ -150,44 +186,44 @@ public class FamilyTree {
         }
 
 
-//        System.out.println("\n** Opgave 2 **");
-//        name = "Jopie";
-//        result = familyTree.findParent(name);
-//        if (result != null) {
-//            if ("Jan".equals(result.getName())) {
-//                System.out.println("Parent van " + name + " gevonden, correct!");
-//            } else {
-//                System.out.println("Verkeerde parent gevonden, INcorrect!");
-//            }
-//        } else {
-//            System.out.println("Parent van " + name + " niet gevonden, INcorrect!");
-//        }
-//
-//        name = "Adam";
-//        result = familyTree.findParent(name);
-//        if (result != null) {
-//            System.out.println(result + " gevonden, INcorrect!");
-//        } else {
-//            System.out.println("Parent van " + name + " niet gevonden, correct!");
-//        }
-//
-//        name = "Greet";
-//        result = familyTree.findParent(name);
-//        if (result != null) {
-//            System.out.println("Parent gevonden, INcorrect!");
-//        } else {
-//            System.out.println("Parent van " + name + " niet gevonden, correct!");
-//        }
+        System.out.println("\n** Opgave 2 **");
+        name = "Jopie";
+        result = familyTree.findParent(name);
+        if (result != null) {
+            if ("Jan".equals(result.getName())) {
+                System.out.println("Parent van " + name + " gevonden, correct!");
+            } else {
+                System.out.println("Verkeerde parent gevonden, INcorrect!");
+            }
+        } else {
+            System.out.println("Parent van " + name + " niet gevonden, INcorrect!");
+        }
+
+        name = "Adam";
+        result = familyTree.findParent(name);
+        if (result != null) {
+            System.out.println(result + " gevonden, INcorrect!");
+        } else {
+            System.out.println("Parent van " + name + " niet gevonden, correct!");
+        }
+
+        name = "Greet";
+        result = familyTree.findParent(name);
+        if (result != null) {
+            System.out.println("Parent gevonden, INcorrect!");
+        } else {
+            System.out.println("Parent van " + name + " niet gevonden, correct!");
+        }
 
 
 //        System.out.println("\n** Opgave 3 **");
 //        System.out.println(familyTree.toLevelOrderString());
 
 
-//        System.out.println("** Opgave 4 **");
-//        System.out.println(familyTree.findAncestors("Jerom"));
-//        System.out.println(familyTree.findAncestors("Jopie"));
-//        System.out.println(familyTree.findAncestors("Adam"));
-//        System.out.println(familyTree.findAncestors("Greet"));
+        System.out.println("** Opgave 4 **");
+        System.out.println(familyTree.findAncestors("Jerom"));
+        System.out.println(familyTree.findAncestors("Jopie"));
+        System.out.println(familyTree.findAncestors("Adam"));
+        System.out.println(familyTree.findAncestors("Greet"));
     }
 }

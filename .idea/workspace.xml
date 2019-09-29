@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/huiswerk/trees/BinarySearchTree.java" line="71" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/huiswerk/trees/BinarySearchTree.java" line="96" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f074f90-e0e3-4f2f-a5d9-1f32d1c810ab" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/APP_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/APP_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/APP_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/APP_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/huiswerk/lists/LinkedListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/APP.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen/FamilyTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen/FamilyTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/huiswerk/lists/HANLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/huiswerk/lists/HANLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/huiswerk/trees/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/huiswerk/trees/BinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/GraphsAndPathsExample/DijkstraAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/huiswerk/GraphsAndPathsExample/DijkstraAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/GraphsAndPathsExample/TestDijkstraAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/huiswerk/GraphsAndPathsExample/TestDijkstraAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/GraphsAndPathsExample/Vertex.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/huiswerk/GraphsAndPathsExample/Vertex.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/PO_algoritmen/FamilyTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/huiswerk/PO_algoritmen/FamilyTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/trees/App$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/trees/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/trees/BinarySearchTreeScala$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/trees/BinarySearchTreeScala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/PO_algoritmen/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/huiswerk/PO_algoritmen/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/generics/boekopdrachten/vraag24.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/huiswerk/generics/boekopdrachten/vraag24.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/generics/boekopdrachten/vraag29.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/huiswerk/generics/boekopdrachten/vraag29.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/graphsAndPaths/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/huiswerk/graphsAndPaths/Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/lists/Arraylist.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/huiswerk/lists/Arraylist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/lists/BalancedSymbolChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/huiswerk/lists/BalancedSymbolChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/lists/HANLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/huiswerk/lists/HANLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/lists/HANStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/huiswerk/lists/HANStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/lists/LinkedListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/huiswerk/lists/LinkedListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/sort/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/huiswerk/sort/MergeSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/sort/generics/InsertionSortGeneric.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/huiswerk/sort/generics/InsertionSortGeneric.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/sort/generics/QuickSortGeneric.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/huiswerk/sort/generics/QuickSortGeneric.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/trees/BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/huiswerk/trees/BinarySearchTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/trees/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/huiswerk/trees/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk/trees/Tree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/huiswerk/trees/Tree.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,28 +38,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/trees/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-85">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="459">
-                <caret line="27" column="65" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
-              </first_editor>
-              <second_editor />
+            <state relative-caret-position="136">
+              <caret line="63" column="40" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -53,17 +54,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/lists/HANLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+            <state relative-caret-position="68">
+              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen/FamilyTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-638">
-              <caret line="159" column="78" lean-forward="true" selection-start-line="159" selection-start-column="78" selection-end-line="159" selection-end-column="78" />
+            <state relative-caret-position="1632">
+              <caret line="97" column="53" selection-start-line="97" selection-start-column="53" selection-end-line="97" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/lists/LinkedListNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her/BlockChain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her/BlockChainListNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="85" selection-start-line="6" selection-start-column="78" selection-end-line="6" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her/Transaction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="35" selection-start-column="35" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -71,7 +108,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/recursie/recursie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-425">
+            <state relative-caret-position="34">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
@@ -126,7 +163,6 @@
         <option value="$PROJECT_DIR$/src/main/java/huiswerk/lists/Arraylist.java" />
         <option value="$PROJECT_DIR$/src/main/java/huiswerk/hashing/HashPP.java" />
         <option value="$PROJECT_DIR$/src/main/java/huiswerk/lists/HANStack.java" />
-        <option value="$PROJECT_DIR$/src/main/java/huiswerk/lists/HANLinkedList.java" />
         <option value="$PROJECT_DIR$/src/main/java/huiswerk/lists/BalancedSymbolChecker.java" />
         <option value="$PROJECT_DIR$/src/main/java/huiswerk/graphs/Graph.java" />
         <option value="$PROJECT_DIR$/src/main/java/huiswerk/graphsAndPaths/Graph.java" />
@@ -143,17 +179,23 @@
         <option value="$PROJECT_DIR$/src/main/java/huiswerk/oefentoets/GraphMatrix.java" />
         <option value="$PROJECT_DIR$/src/main/java/huiswerk/GraphsAndPathsExample/Graph.java" />
         <option value="$PROJECT_DIR$/src/main/java/huiswerk/oefentoets/BinarySearchTreeGeneric.java" />
-        <option value="$PROJECT_DIR$/src/main/java/huiswerk/trees/BinarySearchTree.java" />
         <option value="$PROJECT_DIR$/src/main/java/huiswerk/trees/BinarySearchTreeScala.scala" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen/FamilyTree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/huiswerk/lists/HANLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her/Transaction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her/BlockChainListNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/huiswerk/lists/LinkedListNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her/BlockChain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/huiswerk/trees/BinarySearchTree.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-30" />
+    <option name="y" value="50" />
+    <option name="width" value="1940" />
+    <option name="height" value="1060" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -162,7 +204,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -231,7 +272,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="huiswerk" type="462c0819:PsiDirectoryNode" />
-              <item name="recursie" type="462c0819:PsiDirectoryNode" />
+              <item name="PO_algoritmen_her" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="APP" type="b2602c69:ProjectViewProjectNode" />
@@ -246,6 +287,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,7 +325,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FamilyTree">
+  <component name="RunManager" selected="Application.BinarySearchTree">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -318,27 +360,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySearchTree2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="huiswerk.oefentoets.BinarySearchTree2" />
+    <configuration name="BlockChain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="huiswerk.PO_algoritmen_her.BlockChain" />
       <module name="APP" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="huiswerk.oefentoets.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BinarySearchTreeGeneric" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="huiswerk.oefentoets.BinarySearchTreeGeneric" />
-      <module name="APP" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="huiswerk.oefentoets.*" />
+          <option name="PATTERN" value="huiswerk.PO_algoritmen_her.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -353,6 +381,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="huiswerk.PO_algoritmen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HANLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="huiswerk.lists.HANLinkedList" />
+      <module name="APP" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="huiswerk.lists.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -393,18 +435,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.BinarySearchTree" />
-      <item itemvalue="Application.BinarySearchTree2" />
-      <item itemvalue="Application.BinarySearchTreeGeneric" />
       <item itemvalue="Application.FamilyTree" />
       <item itemvalue="Application.App" />
+      <item itemvalue="Application.BlockChain" />
+      <item itemvalue="Application.HANLinkedList" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinarySearchTree" />
+        <item itemvalue="Application.BlockChain" />
+        <item itemvalue="Application.HANLinkedList" />
         <item itemvalue="Application.FamilyTree" />
         <item itemvalue="Application.App" />
-        <item itemvalue="Application.BinarySearchTree" />
-        <item itemvalue="Application.BinarySearchTreeGeneric" />
-        <item itemvalue="Application.BinarySearchTree2" />
       </list>
     </recent_temporary>
   </component>
@@ -451,17 +493,20 @@
       <workItem from="1554135280940" duration="68000" />
       <workItem from="1559401778864" duration="3262000" />
       <workItem from="1559464237044" duration="13666000" />
+      <workItem from="1559566679903" duration="1520000" />
+      <workItem from="1559641663159" duration="8998000" />
+      <workItem from="1559653713141" duration="13000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115656000" />
+    <option name="totallyTimeSpent" value="126187000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.102345414" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10469799" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -471,15 +516,15 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32934782" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23943663" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23937677" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Tool Output" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="ANTLR Preview" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32719395" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32577905" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.3336945" />
@@ -497,7 +542,7 @@
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info anchor="right" id="CDI" order="11" />
-      <window_info anchor="right" id="Bean Validation" order="12" visible="true" weight="0.33102345" />
+      <window_info anchor="right" id="Bean Validation" order="12" visible="true" weight="0.33087248" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27452025" />
@@ -541,20 +586,34 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/huiswerk/lists/HANLinkedList.java</url>
-          <line>145</line>
-          <properties class="huiswerk.lists.HANStack">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen/FamilyTree.java</url>
           <line>155</line>
           <properties class="huiswerk.PO_algoritmen.FamilyTree" method="findAncestorsRec">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her/BlockChain.java</url>
+          <line>20</line>
+          <properties class="huiswerk.PO_algoritmen_her.BlockChain" method="addTransaction">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/huiswerk/trees/BinarySearchTree.java</url>
+          <line>61</line>
+          <properties class="huiswerk.trees.BinarySearchTree" method="subtractRec">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her/BlockChain.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -700,34 +759,10 @@
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/StringBuffer.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/StringBuilder.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/ArrayList.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="244" column="18" selection-start-line="244" selection-start-column="18" selection-end-line="244" selection-end-column="18" />
-          <folding>
-            <element signature="e#10225#10226#0" expanded="true" />
-            <element signature="e#10308#10309#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/trees/BinarySearchTreeScala.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/lang/Object.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/recursie/opdracht.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-502">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/recursie/recursie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
@@ -744,15 +779,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/trees/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="136">
+          <caret line="63" column="40" selection-start-line="63" selection-start-column="40" selection-end-line="63" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/lists/HANLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+        <state relative-caret-position="68">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen/FamilyTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="97" column="53" selection-start-line="97" selection-start-column="53" selection-end-line="97" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/lists/LinkedListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her/BlockChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her/BlockChainListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="85" selection-start-line="6" selection-start-column="78" selection-end-line="6" selection-end-column="85" />
+          <folding>
+            <element signature="e#352#353#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/recursie/recursie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -768,10 +849,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen/FamilyTree.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/trees/BinarySearchTreeScala.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-638">
-          <caret line="159" column="78" lean-forward="true" selection-start-line="159" selection-start-column="78" selection-end-line="159" selection-end-column="78" />
+        <state relative-caret-position="102">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
         </state>
       </provider>
     </entry>

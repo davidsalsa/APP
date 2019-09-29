@@ -47,6 +47,31 @@ public class BinarySearchTree<T> {
         }
     }
 
+    private static int subtract(BinarySearchTree<Integer> bt) {
+        Node res =0;
+
+        if(bt.root == null){
+            return 0;
+        }
+
+        res = subtractRec(bt.root.key, res).key;
+
+        return res;
+    }
+
+    private static int subtractRec(Node root, int res){
+        if(root.left != null){
+            root.key = root.key - root.left.key;
+            root = subtractRec(root.left);
+        }
+        if(root.right != null){
+            root.key = root.key - root.right.key;
+            root = subtractRec(root.right);
+        }
+
+        return root;
+    }
+
     public void postOrder(Node node) {
         if (node != null) {
             postOrder(node.left);
@@ -87,29 +112,27 @@ public class BinarySearchTree<T> {
 
 
     public static void main(String[] args) {
-        BinarySearchTree tree = new BinarySearchTree();
+        BinarySearchTree tree = new BinarySearchTree<Integer>();
 
-        int[] array = {1, 3, 8, 10, 19,  22, 32};
+        tree.insert(6);
+        tree.insert(5);
+        tree.insert(4);
+        tree.insert(2);
+        tree.insert(3);
 
-        tree.insert(70);
-        tree.insert(30);
-        tree.insert(20);
-        tree.insert(40);
-        tree.insert(50);
-        tree.insert(60);
-        tree.insert(80);
 
-        // print inorder traversal of the BST
 
-        System.out.println("inOrder:");
-        tree.inOrder(tree.root);
         System.out.println("preOrder:");
         tree.preOrder(tree.root);
-        System.out.println("postOrder:");
-        tree.postOrder(tree.root);
 
+        System.out.println(subtract(tree));
 
-        System.out.println(tree.find(tree.root, 20));
+//        System.out.println("inOrder:");
+//        tree.inOrder(tree.root);
+
+//        System.out.println("postOrder:");
+//        tree.postOrder(tree.root);
+//        System.out.println(tree.find(tree.root, 20));
 
     }
 }

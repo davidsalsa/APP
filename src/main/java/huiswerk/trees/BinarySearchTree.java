@@ -48,25 +48,25 @@ public class BinarySearchTree<T> {
     }
 
     private static int subtract(BinarySearchTree<Integer> bt) {
-        Node res =0;
+        int res = 0;
 
         if(bt.root == null){
             return 0;
         }
 
-        res = subtractRec(bt.root.key, res).key;
+        res = subtractRec(bt.root, res).key;
 
         return res;
     }
 
-    private static int subtractRec(Node root, int res){
+    private static Node subtractRec(Node root, int res){
         if(root.left != null){
             root.key = root.key - root.left.key;
-            root = subtractRec(root.left);
+            root = subtractRec(root.left, root.key);
         }
         if(root.right != null){
             root.key = root.key - root.right.key;
-            root = subtractRec(root.right);
+            root = subtractRec(root.right, root.key);
         }
 
         return root;

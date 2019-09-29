@@ -94,16 +94,16 @@ public class FamilyTree {
     }
 
     private Person findPerson(Person root, String name, Person res) {
-        if(!name.equals(root.getName())) {
-            for (Person child : root.getChildren()) {
-                res = findPerson(child, name, res);
+        if (root.getName().equals(name)) {
+           res = root;
+        } else if(root.getPartner() !=null){
+            if(root.getPartner().getName().equals(name)){
+                return root.getPartner();
             }
-        } else res = root;
+        }
 
-        if(root.getPartner()!=null){
-            if (name.equals(root.getPartner().getName())) {
-                res = root.getPartner();
-            }
+        for (Person child : root.getChildren()) {
+            res = findPerson(child, name, res);
         }
 
         return res;

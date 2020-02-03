@@ -1,0 +1,42 @@
+5.20
+
+1. O(N)
+
+2. O(N)
+
+3. O(N^2)
+
+4. O(N)
+
+5. O(N^3)
+
+6. O(N^2)
+
+7. O(N^4)
+
+8. O(Log(N))
+
+
+=====
+
+Huiswerk:
+
+5.4
+
+x^2, x^2 + x, x^2 – x, (x^3 / (x – 1)) = x ^2
+
+x = x
+
+5.14acd
+
+a. 5 x 0.5 = 2.5ms
+c. 5^2 x 0.5 = 12.5ms
+d. 5^3 x 0.5 =62.5ms
+
+
+5.15acd
+a. linear = 100^1 * 0.5 * 120 = 12000 per min
+c. quadratic = sqr(12000)  = 109.5
+d. cubic = cbr(12000) = 22.8
+
+runtime complexity TSP (travelling salesman problem) v= O(n^2 * 2^n)

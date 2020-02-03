@@ -130,7 +130,7 @@ public class BinarySearchTree<T> {
 
 //        System.out.println("postOrder:");
 //        tree.postOrder(tree.root);
-//        System.out.println(tree.find(tree.root, 20));
+//        System.out.println(tree.find(tree.root, BigO));
 
     }
 }

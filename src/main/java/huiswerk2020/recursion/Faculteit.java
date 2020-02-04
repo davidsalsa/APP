@@ -57,11 +57,11 @@ public class Faculteit {
     }
 
 
-    public static String reverse(String myStr) {
-        if (myStr.isEmpty()){
-            return myStr;
+    public static String reverse(String str) {
+        if (str.isEmpty()){
+            return str;
         }
-        return reverse(myStr.substring(1)) + myStr.charAt(0);
+        return reverse(str.substring(1)) + str.charAt(0);
     }
 
 

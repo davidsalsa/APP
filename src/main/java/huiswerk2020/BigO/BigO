@@ -12,7 +12,7 @@
 
 6. O(N^2)
 
-7. O(N^4)
+7. O(N^5)
 
 8. O(Log(N))
 
@@ -35,8 +35,8 @@ d. 5^3 x 0.5 =62.5ms
 
 
 5.15acd
-a. linear = 100^1 * 120 = 12000
-c. quadratic = sqr(100) * 120  = 1200
-d. cubic = cbr(100) * 120 = 552
+a. linear = 100 * 120000 = 12000000
+c. quadratic = 100 * sqr(120000) = 34641
+d. cubic = cbr(120000) * 100 = 4932
 
 runtime complexity TSP (travelling salesman problem) v= O(n^2 * 2^n)

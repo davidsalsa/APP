@@ -12,13 +12,13 @@ public class Faculteit {
     }
 
     private static int faculteit(int n) {
-        if (n == 1)
-            return n;
+        if (n == 0)
+            return 1;
 
         return faculteit(n - 1) * n;
     }
 
-    public static int fac_nonrec(int n) {
+    private static int fac_nonrec(int n) {
         int result;
         result =n;
 
@@ -35,7 +35,7 @@ public class Faculteit {
         return som(n-1) + n;
     }
 
-    public static int som_nonrec(int n) {
+    private static int som_nonrec(int n) {
         int result;
         result =n;
 
@@ -45,7 +45,7 @@ public class Faculteit {
         return result;
     }
 
-    public static int count1FromBinary(int n) {
+    private static int count1FromBinary(int n) {
         if(n == 0) {
             return 0;
         }
@@ -57,12 +57,10 @@ public class Faculteit {
     }
 
 
-    public static String reverse(String str) {
+    private static String reverse(String str) {
         if (str.isEmpty()){
             return str;
         }
         return reverse(str.substring(1)) + str.charAt(0);
     }
-
-
 }

@@ -1,5 +1,7 @@
 package huiswerk2020.Generics;
 
+import scala.collection.concurrent.Debug;
+
 public class Min<T extends  Comparable<T>>{
 
     public static void main(String[] args){

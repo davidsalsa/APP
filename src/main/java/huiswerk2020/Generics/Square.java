@@ -1,10 +1,10 @@
 package huiswerk2020.Generics;
 
 public class Square extends Shape implements Comparable<Square> {
-    double length;
-    double width;
+    private double length;
+    private double width;
 
-    public Square(double length, double width){
+    private Square(double length, double width){
         this.length = length;
         this.width = width;
     }

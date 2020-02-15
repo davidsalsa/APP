@@ -2,18 +2,19 @@ package huiswerk.lists;
 
 import java.util.Arrays;
 
-public class Arraylist {
+public class Arraylist <T> {
 
     private int index = 0;
     private static final int DEFAULT_CAPACITY = 10;
-    private Object elements[];
+    private Object[] elements;
 
 
     public Arraylist(){
+
         elements = new Object[DEFAULT_CAPACITY];
     }
 
-    public void add(int value) {
+    public void add(T value) {
         if (index == elements.length) {
             verdubbeling();
         }
@@ -21,20 +22,20 @@ public class Arraylist {
     }
 
     private void verdubbeling() {
-        int newSize = elements.length * 2;
+        int newSize = elements.length * 2 + 1;
         elements = Arrays.copyOf(elements, newSize);
     }
 
-    public int getValue(int index){
-        return (int) elements[index];
+    public Object getValue(int index){
+        return elements[index];
     }
 
-    public void setValue(int index, int value){
+    public void setValue(int index, T value){
         elements[index] = value;
     }
 
     public static void main(String[] args) {
-        Arraylist list = new Arraylist();
+        Arraylist<Integer> list = new Arraylist<>();
         list.add(1);
         list.add(2);
         list.add(3);

@@ -1,8 +1,6 @@
 package huiswerk2020.Generics;
 
-import scala.collection.concurrent.Debug;
-
-public class Min<T extends  Comparable<T>>{
+public class Min{
 
     public static void main(String[] args){
         Min min = new Min();
@@ -12,7 +10,7 @@ public class Min<T extends  Comparable<T>>{
         System.out.println(min.min(arr));
     }
 
-    private T min(T[] arr){
+    private <T extends  Comparable<T>> T min(T[] arr){
         T smallestItem = arr[0];
         for(T item : arr){
             if(item.compareTo(smallestItem) < 0){

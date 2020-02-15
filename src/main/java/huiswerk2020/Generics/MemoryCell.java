@@ -1,17 +1,17 @@
 package huiswerk2020.Generics;
 
-public class MemoryCell implements Comparable<MemoryCell>{
-    private int storedValue;
+public class MemoryCell<T extends Comparable <T>> implements Comparable<MemoryCell<T>>{
+    private T storedValue;
 
-    public int read( ){
+    public T read( ){
         return storedValue;
     }
-    public void write( int x ) {
+    public void write( T x ) {
         storedValue = x;
     }
 
     @Override
-    public int compareTo(MemoryCell o) {
-        return storedValue - o.storedValue;
+    public int compareTo(MemoryCell<T> o) {
+        return storedValue.compareTo(o.read());
     }
 }

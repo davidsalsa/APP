@@ -18,7 +18,7 @@ public class Square extends Shape implements Comparable<Square> {
 
     @Override
     public int compareTo(Square other) {
-        return (int)(area() - other.area());
+        return Double.compare(area(), other.area());
     }
 
     @Override

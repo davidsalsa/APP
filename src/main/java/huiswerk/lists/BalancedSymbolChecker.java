@@ -2,25 +2,21 @@ package huiswerk.lists;
 
 public class BalancedSymbolChecker {
 
-    private HANLinkedList<String> list = new HANLinkedList();
-
     public boolean checker(String symbol) {
 
-        HANStack hanStack = new HANStack(list);
+        HANStack<String> hanStack = new HANStack<>();
         for (int i = 0; i < symbol.length(); i++) {
-            if (symbol.charAt(i) == ')' && list.first==null) {
+            if (symbol.charAt(i) == ')' && hanStack.top()==null) {
                 return false;
             }
             if (symbol.charAt(i) == '(') {
                 hanStack.push("(");
             }
-            if (symbol.charAt(i) == ')' && hanStack.top() == "(") {
+            if (symbol.charAt(i) == ')' && hanStack.top().equals("(")) {
                 hanStack.pop();
             }
         }
-        if (list.first == null) {
-            return true;
-        } else return false;
+        return hanStack.top() == null;
     }
 
     public static void main(String[] args) {

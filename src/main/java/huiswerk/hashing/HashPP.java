@@ -2,28 +2,37 @@ package huiswerk.hashing;
 
 public class HashPP {
 
-    private static int[] array = new int[11];
+    private int[] array = new int[11];
 
     public static void main(String[] args){
-        insert(2,1);
-        insert(4,1);
-        insert(5,1);
-        insert(1,1);
-        insert(8,1);
-        insert(14,1);
-        insert(12,1);
+        HashPP hashPP = new HashPP();
 
-        System.out.println(array);
+        hashPP.insert(2);
+        hashPP.insert(4);
+        hashPP.insert(5);
+        hashPP.insert(1);
+        hashPP.insert(8);
+        hashPP.insert(14);
+        hashPP.insert(12);
+
+        System.out.println(hashPP.toString());
     }
 
-    private static int hash(int x){
+    public String toString(){
+        StringBuilder print = new StringBuilder();
+        for (int value : array) {
+            print.append(value).append("\n");
+        }
+    return print.toString();
+    }
+
+    private int hash(int x){
         return x *7;
     }
 
-    private static void insert(int key, int value){
-        int index = hash(key) % value;
-        System.out.println(key);
-        array[index] = value;
+    private void insert(int key){
+        int index = hash(key) % array.length;
+        array[index] = key;
     }
 
 }

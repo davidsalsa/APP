@@ -35,7 +35,7 @@ public class HANLinkedList<T> {
         if (first == null)
             return;
 
-        LinkedListNode temp = first;
+        LinkedListNode<T> temp = first;
 
         if (index == 0) {
             first = temp.getNext();   // Change head
@@ -48,7 +48,7 @@ public class HANLinkedList<T> {
         if (temp == null || temp.getNext() == null)
             return;
 
-        LinkedListNode next = temp.getNext().getNext();
+        LinkedListNode<T> next = temp.getNext().getNext();
 
         temp.setNext(next);
     }
@@ -78,26 +78,23 @@ public class HANLinkedList<T> {
 
 
     public static void main(String[] args) {
-        HANLinkedList list = new HANLinkedList();
-        HANStack hanStack = new HANStack(list);
+        HANStack<Integer> hanStack = new HANStack<>();
 
-        list.addFirst(new LinkedListNode<Integer>(1));
-        list.addFirst(new LinkedListNode<Integer>(3));
-        list.addFirst(new LinkedListNode<Integer>(4));
-        list.addFirst(new LinkedListNode<Integer>(6));
-        list.insert(2, new LinkedListNode<Integer>(5));
-        list.print();
-        list.removeFirst();
+        hanStack.push(1);
+        hanStack.push(3);
+        hanStack.push(4);
+        hanStack.push(6);
+        hanStack.push(5);
+        hanStack.list.print();
+        hanStack.pop();
         System.out.println("After removing...");
-        list.print();
+        hanStack.list.print();
         System.out.println("get...");
-        System.out.println(list.get(2));
-        list.insert(3, new LinkedListNode<String>("Hello!"));
         System.out.println("After inserting...");
-        list.print();
-        list.delete(1);
+        hanStack.list.print();
+        hanStack.pop();
         System.out.println("After delete...");
-        list.print();
+        hanStack.list.print();
         System.out.println("count...");
         System.out.println(hanStack.getSize());
         System.out.println("top...");
@@ -111,16 +108,14 @@ public class HANLinkedList<T> {
 
 class HANStack<T> {
 
-    private HANLinkedList list;
+    public HANLinkedList<T> list = new HANLinkedList<T>();
 
-    public HANStack(HANLinkedList list) {
-        this.list = list;
+    public HANStack() {
     }
 
     public T push(T value) {
-        list.addFirst(new LinkedListNode(value));
-        T pushedItem = (T) list.get(getSize());
-        return pushedItem;
+        list.addFirst(new LinkedListNode<>(value));
+        return list.get(getSize());
     }
 
     public T pop() {
@@ -129,7 +124,7 @@ class HANStack<T> {
         if(list.first == null) {
             removedItem = null;
         } else {
-            removedItem = (T) list.get(getSize());
+            removedItem = list.get(getSize());
         }
 
         list.removeFirst();
@@ -137,11 +132,19 @@ class HANStack<T> {
     }
 
     public T top() {
-        return (T) list.get(getSize());
+        if(list.first == null){
+            return null;
+        }
+        return list.get(getSize());
     }
 
     public int getSize() {
         LinkedListNode<T> node = list.first;
+
+        if(node == null){
+            return 0;
+        }
+
         int count = 1;
 
         while (node.getNext() != null) {

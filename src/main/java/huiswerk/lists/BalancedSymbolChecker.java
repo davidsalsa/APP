@@ -2,7 +2,7 @@ package huiswerk.lists;
 
 public class BalancedSymbolChecker {
 
-    public boolean checker(String symbol) {
+    private boolean checker(String symbol) {
 
         HANStack<String> hanStack = new HANStack<>();
         for (int i = 0; i < symbol.length(); i++) {

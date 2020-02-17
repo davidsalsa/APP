@@ -108,17 +108,15 @@ public class HANLinkedList<T> {
 
 class HANStack<T> {
 
-    public HANLinkedList<T> list = new HANLinkedList<T>();
+    HANLinkedList<T> list = new HANLinkedList<T>();
 
-    public HANStack() {
-    }
 
-    public T push(T value) {
+    T push(T value) {
         list.addFirst(new LinkedListNode<>(value));
         return list.get(getSize());
     }
 
-    public T pop() {
+    T pop() {
         T removedItem;
 
         if(list.first == null) {
@@ -131,14 +129,14 @@ class HANStack<T> {
         return removedItem;
     }
 
-    public T top() {
+    T top() {
         if(list.first == null){
             return null;
         }
         return list.get(getSize());
     }
 
-    public int getSize() {
+    int getSize() {
         LinkedListNode<T> node = list.first;
 
         if(node == null){

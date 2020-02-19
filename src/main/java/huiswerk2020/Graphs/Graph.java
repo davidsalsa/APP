@@ -151,6 +151,8 @@ public class Graph {
     }
 
     public boolean isConnected(){
+        clearAll( );
+
         if(vertexMap.isEmpty()){
            throw new IllegalArgumentException("Graph is empty");
         }

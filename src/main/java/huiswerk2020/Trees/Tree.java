@@ -1,4 +1,4 @@
-package huiswerk.trees;
+package huiswerk2020.Trees;
 
 
 class Tree<T> {  // implements Iterable<T> {

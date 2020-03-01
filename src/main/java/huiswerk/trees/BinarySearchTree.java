@@ -123,14 +123,13 @@ public class BinarySearchTree<T> {
         System.out.println("preOrder:");
         tree.preOrder(tree.root);
 
-        System.out.println(subtract(tree));
 
-//        System.out.println("inOrder:");
-//        tree.inOrder(tree.root);
+        System.out.println("inOrder:");
+        tree.inOrder(tree.root);
 
-//        System.out.println("postOrder:");
-//        tree.postOrder(tree.root);
-//        System.out.println(tree.find(tree.root, BigO));
+        System.out.println("postOrder:");
+        tree.postOrder(tree.root);
+
 
     }
 }

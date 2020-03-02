@@ -10,6 +10,7 @@ public class Node<T extends Comparable<T>>{
         left = right = null;
     }
 
+
     public Node<T> findNodeRecursively(T value) {
         if (value.compareTo(key) < 0) {
             return left.findNodeRecursively(value);

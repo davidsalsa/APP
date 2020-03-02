@@ -61,11 +61,4 @@ public class BinaryTree<T extends Comparable<T>>
         return getNumberOfNodesWithOneChild(root.left) + getNumberOfNodesWithOneChild(root.right);
     }
 
-// only works with BST
-    public Node findNode(T value){
-        if(root == null){
-            return null;
-        }
-        return root.findNodeRecursively(value);
-    }
 }

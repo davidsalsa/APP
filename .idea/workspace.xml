@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e426c3d6-3513-4463-af86-03a065f511b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/huiswerk2020/Trees/BinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/huiswerk2020/Trees/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/huiswerk2020/Trees/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/huiswerk2020/Trees/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/huiswerk2020/Trees/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/huiswerk2020/Trees/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/huiswerk2020/Trees/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/huiswerk2020/Trees/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/huiswerk2020/Trees/BinarySearchTree.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,15 +38,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk2020/Trees/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="333">
+              <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
               <folding>
                 <element signature="e#110#111#0" expanded="true" />
                 <element signature="e#131#132#0" expanded="true" />
-                <element signature="e#215#216#0" expanded="true" />
-                <element signature="e#247#248#0" expanded="true" />
+                <element signature="e#234#235#0" expanded="true" />
+                <element signature="e#274#275#0" expanded="true" />
                 <element signature="e#300#301#0" expanded="true" />
                 <element signature="e#343#344#0" expanded="true" />
+                <element signature="e#924#925#0" expanded="true" />
+                <element signature="e#967#968#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,23 +64,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk2020/Trees/BinaryTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
-              <folding>
-                <element signature="e#144#145#0" expanded="true" />
-                <element signature="e#171#172#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/trees/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1836">
-              <caret line="112" column="60" selection-start-line="112" selection-start-column="53" selection-end-line="112" selection-end-column="60" />
+            <state relative-caret-position="323">
+              <caret line="104" column="46" lean-forward="true" selection-start-line="104" selection-start-column="46" selection-end-line="104" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -217,15 +202,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="huiswerk2020" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="APP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="APP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="huiswerk2020" type="462c0819:PsiDirectoryNode" />
-              <item name="Trees" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -366,12 +342,12 @@
       <workItem from="1582027232092" duration="4218000" />
       <workItem from="1582636008220" duration="3643000" />
       <workItem from="1582717866625" duration="1427000" />
-      <workItem from="1583163062405" duration="2570000" />
+      <workItem from="1583163062405" duration="4859000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76798000" />
+    <option name="totallyTimeSpent" value="79087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -791,23 +767,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk2020/Trees/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/trees/BinarySearchTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
-          <caret line="112" column="60" selection-start-line="112" selection-start-column="53" selection-end-line="112" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk2020/Trees/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
+        <state relative-caret-position="928">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
           <folding>
             <element signature="e#144#145#0" expanded="true" />
@@ -816,17 +778,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/trees/BinarySearchTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="104" column="46" lean-forward="true" selection-start-line="104" selection-start-column="46" selection-end-line="104" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk2020/Trees/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk2020/Trees/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="333">
+          <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
           <folding>
             <element signature="e#110#111#0" expanded="true" />
             <element signature="e#131#132#0" expanded="true" />
-            <element signature="e#215#216#0" expanded="true" />
-            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#274#275#0" expanded="true" />
             <element signature="e#300#301#0" expanded="true" />
             <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
           </folding>
         </state>
       </provider>

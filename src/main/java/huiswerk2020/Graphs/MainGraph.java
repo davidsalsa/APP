@@ -23,7 +23,6 @@ public class MainGraph {
         graph.addEdge(v4.name, v5.name, 4);
 
         System.out.println("Connected: " + graph.isConnected());
-
         graph.printPath(v5.name);
 
         graph.dijkstra(v1.name);

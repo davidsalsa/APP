@@ -1,5 +1,7 @@
 package huiswerk2020.Graphs;
 
+import huiswerk.lists.ArrayQueue;
+
 import java.util.*;
 
 public class Graph {
@@ -87,12 +89,12 @@ public class Graph {
         if( start == null )
             throw new NoSuchElementException( "Start vertex not found" );
 
-        Queue<Vertex> q = new LinkedList<Vertex>( );
-        q.add( start ); start.dist = 0;
+        ArrayQueue<Vertex> q = new ArrayQueue<>( );
+        q.enqueue( start ); start.dist = 0;
 
         while( !q.isEmpty( ) )
         {
-            Vertex v = q.remove( );
+            Vertex v = q.dequeue( );
 
             for( Edge e : v.adj )
             {
@@ -101,7 +103,7 @@ public class Graph {
                 {
                     w.dist = v.dist + 1;
                     w.prev = v;
-                    q.add( w );
+                    q.enqueue( w );
                 }
             }
         }

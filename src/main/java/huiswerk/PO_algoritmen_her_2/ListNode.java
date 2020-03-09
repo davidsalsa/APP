@@ -12,7 +12,7 @@ public class ListNode<T> {
     public void setNext(ListNode<T> next) {
         this.next = next;
     }
-    public void setPrev(ListNode<T> next) {
+    public void setPrev(ListNode<T> prev) {
         this.prev = prev;
     }
 

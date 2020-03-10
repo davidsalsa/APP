@@ -135,5 +135,6 @@ public class BinarySearchTree<T extends Comparable<T>>  {
         tree.inOrder(tree.root);
         System.out.println("minimum value: " + tree.findMin(tree.root).key);
         System.out.println("maximum value: " + tree.findMax(tree.root).key);
+        tree.findNode(2);
     }
 }

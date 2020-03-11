@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e426c3d6-3513-4463-af86-03a065f511b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/huiswerk/lists/ArrayQueue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her_2/DoublyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her_2/DoublyLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her_2/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her_2/ListNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/huiswerk2020/Graphs/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/huiswerk2020/Graphs/Graph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/huiswerk2020/Graphs/MainGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/huiswerk2020/Graphs/MainGraph.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,85 +18,15 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/trees/BinarySearchTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
-              <caret line="74" column="33" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk2020/Trees/BinarySearchTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk2020/Trees/Tree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/lists/HANLinkedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-              <folding>
-                <element signature="e#1860#1861#0" expanded="true" />
-                <element signature="e#1892#1893#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/lists/Arraylist.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/lists/ArrayQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
-              <folding>
-                <element signature="e#599#600#0" expanded="true" />
-                <element signature="e#627#628#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk2020/Graphs/MainGraph.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her_2/DoublyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk2020/Graphs/Graph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="106" column="17" lean-forward="true" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
+            <state relative-caret-position="617">
+              <caret line="118" column="21" selection-start-line="118" selection-start-column="21" selection-end-line="118" selection-end-column="21" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2274#2275#0" expanded="true" />
+                <element signature="e#2320#2321#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,17 +35,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her_2/ListNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk2020/Trees/Node.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="5" selection-start-line="13" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="323">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+              <folding>
+                <element signature="e#564#565#0" expanded="true" />
+                <element signature="e#587#588#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,7 +70,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen/FamilyTree.java" />
-        <option value="$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her_2/DoublyLinkedList.java" />
         <option value="$PROJECT_DIR$/src/main/java/huiswerk2020/BigO/20" />
         <option value="$PROJECT_DIR$/src/main/java/huiswerk2020/BigO/BigO" />
         <option value="$PROJECT_DIR$/src/main/java/huiswerk2020/recursion/Faculteit.java" />
@@ -178,10 +100,11 @@
         <option value="$PROJECT_DIR$/src/main/java/huiswerk2020/Trees/Node.java" />
         <option value="$PROJECT_DIR$/src/main/java/huiswerk2020/Trees/BinaryTree.java" />
         <option value="$PROJECT_DIR$/src/main/java/huiswerk2020/Trees/BinarySearchTree.java" />
-        <option value="$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her_2/ListNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/huiswerk/lists/ArrayQueue.java" />
         <option value="$PROJECT_DIR$/src/main/java/huiswerk2020/Graphs/Graph.java" />
         <option value="$PROJECT_DIR$/src/main/java/huiswerk2020/Graphs/MainGraph.java" />
+        <option value="$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her_2/ListNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her_2/DoublyLinkedList.java" />
       </list>
     </option>
   </component>
@@ -198,6 +121,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -279,7 +203,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,7 +237,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainGraph">
+  <component name="RunManager" selected="Application.DoublyLinkedList">
     <configuration name="BinarySearchTree (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="huiswerk2020.Trees.BinarySearchTree" />
       <module name="APP" />
@@ -354,6 +277,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DoublyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="huiswerk.PO_algoritmen_her_2.DoublyLinkedList" />
+      <module name="APP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="huiswerk.PO_algoritmen_her_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="huiswerk2020.Graphs.MainGraph" />
       <module name="APP" />
@@ -367,33 +303,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="huiswerk2020.Trees.Tree" />
-      <module name="APP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="huiswerk2020.Trees.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.MainGraph" />
-      <item itemvalue="Application.Tree" />
       <item itemvalue="Application.BinarySearchTree" />
       <item itemvalue="Application.BinaryTree" />
       <item itemvalue="Application.BinarySearchTree (1)" />
+      <item itemvalue="Application.DoublyLinkedList" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DoublyLinkedList" />
         <item itemvalue="Application.MainGraph" />
         <item itemvalue="Application.BinarySearchTree (1)" />
         <item itemvalue="Application.BinarySearchTree" />
         <item itemvalue="Application.BinaryTree" />
-        <item itemvalue="Application.Tree" />
       </list>
     </recent_temporary>
   </component>
@@ -416,18 +339,19 @@
       <workItem from="1582636008220" duration="3643000" />
       <workItem from="1582717866625" duration="1427000" />
       <workItem from="1583163062405" duration="4859000" />
-      <workItem from="1583750203923" duration="1291000" />
+      <workItem from="1583750203923" duration="2118000" />
+      <workItem from="1583930179663" duration="1762000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81075000" />
+    <option name="totallyTimeSpent" value="83664000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11727079" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.118336886" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -448,7 +372,7 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32577905" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.3186969" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.31852654" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="15" />
       <window_info anchor="right" id="Maven" order="0" />
@@ -809,13 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk2020/Trees/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="5" selection-start-line="13" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/lists/HANLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -834,34 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her_2/DoublyLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-          <folding>
-            <element signature="e#2274#2275#0" expanded="true" />
-            <element signature="e#2320#2321#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her_2/ListNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk2020/Graphs/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="106" column="17" lean-forward="true" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/lists/ArrayQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -875,8 +764,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk2020/Graphs/MainGraph.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk2020/Graphs/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="106" column="17" lean-forward="true" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk2020/Trees/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="22" column="43" lean-forward="true" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+          <caret line="22" column="5" selection-start-line="13" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her_2/ListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding>
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huiswerk/PO_algoritmen_her_2/DoublyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="118" column="21" selection-start-line="118" selection-start-column="21" selection-end-line="118" selection-end-column="21" />
+          <folding>
+            <element signature="e#2274#2275#0" expanded="true" />
+            <element signature="e#2320#2321#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

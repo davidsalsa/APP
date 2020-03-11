@@ -22,4 +22,9 @@ public class ListNode<T> {
     }
     public ListNode<T> getPrev() { return prev; }
     public T getValue() { return value; }
+
+    @Override
+    public String toString() {
+        return value.toString();
+    }
 }

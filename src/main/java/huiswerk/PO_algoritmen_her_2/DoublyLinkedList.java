@@ -31,7 +31,7 @@ public class DoublyLinkedList<T> {
             tail = node;
 
         } else {
-            tail.prev = node;
+            tail.next = node;
             node.prev = tail;
             node.next = null;
             tail = node;
@@ -43,15 +43,15 @@ public class DoublyLinkedList<T> {
         ListNode<T> currentNode = head;
 
         if (index == 0) {
-            temp.setNext(head);
-            this.head = temp;
+            addFirst(temp.getValue());
         } else {
             for (int i = 1; i < index; i++) {
                 currentNode = currentNode.getNext();
             }
-            temp.setNext(currentNode.getNext());
-            temp.setPrev(currentNode.getPrev());
+            temp.setNext(currentNode.next);
             currentNode.setNext(temp);
+            temp.setPrev(currentNode);
+            temp.next.prev = temp;
         }
     }
 
@@ -103,7 +103,7 @@ public class DoublyLinkedList<T> {
         }
         else
         {
-            return  ln.getValue() + " " + toStringRecursive(ln.next);
+            return  ln.getValue() + "\n" + toStringRecursive(ln.next);
         }
     }
 
@@ -115,6 +115,8 @@ public class DoublyLinkedList<T> {
         list.addFirst(new ListNode<>(4));
         list.addLast(new ListNode<>(6));
 
+        list.insert(3, new ListNode<>(5));
+        list.delete(1);
         System.out.print(list.toString());
 
 

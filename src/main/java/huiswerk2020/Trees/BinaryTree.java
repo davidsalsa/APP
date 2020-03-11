@@ -5,9 +5,13 @@ public class BinaryTree<T extends Comparable<T>>
     // Root of Binary Tree
     Node root;
 
-    BinaryTree()
+    public BinaryTree()
     {
         root = null;
+    }
+
+    public BinaryTree(Node<T> root){
+        this.root = root;
     }
 
     public static void main(String[] args)

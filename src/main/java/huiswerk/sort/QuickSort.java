@@ -1,33 +1,43 @@
 package huiswerk.sort;
 
-public class QuickSort {
-    int partition(int arr[], int low, int high) {
-        int pivot = arr[high];
-        int i = (low-1);
-        for (int j=low; j<high; j++) {
-
-            if (arr[j] <= pivot) {
-                i++;
-
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-            }
+public class QuickSort<T extends Comparable<T>> {
+    public void quicksort(T[] array, int startIndex, int endIndex)
+    {
+        // verify that the start and end index have not overlapped
+        if (startIndex < endIndex)
+        {
+            // calculate the pivotIndex
+            int pivotIndex = partition(array, startIndex, endIndex);
+            // sort the left sub-array
+            quicksort(array, startIndex, pivotIndex);
+            // sort the right sub-array
+            quicksort(array, pivotIndex + 1, endIndex);
         }
-
-        int temp = arr[i+1];
-        arr[i+1] = arr[high];
-        arr[high] = temp;
-
-        return i+1;
     }
 
-    void sort(int arr[], int low, int high) {
-        if (low < high) {
-            int pi = partition(arr, low, high);
+    private int partition(T[] array, int startIndex, int endIndex)
+    {
+        int pivotIndex = (startIndex + endIndex) / 2;
+        T pivotValue = array[pivotIndex];
+        startIndex--;
+        endIndex++;
 
-            sort(arr, low, pi-1);
-            sort(arr, pi+1, high);
+        while (true)
+        {
+            // start at the FIRST index of the sub-array and increment
+            // FORWARD until we find a value that is > pivotValue
+            do startIndex++; while (array[startIndex].compareTo(pivotValue) < 0) ;
+
+            // start at the LAST index of the sub-array and increment
+            // BACKWARD until we find a value that is < pivotValue
+            do endIndex--; while (array[endIndex].compareTo(pivotValue) > 0) ;
+
+            if (startIndex >= endIndex) return endIndex;
+
+            // swap values at the startIndex and endIndex
+            T temp = array[startIndex];
+            array[startIndex] = array[endIndex];
+            array[endIndex] = temp;
         }
     }
 }

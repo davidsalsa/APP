@@ -1,78 +1,66 @@
 package huiswerk.sort;
 
-public class MergeSort {
 
-    void merge(int arr[], int l, int m, int r)
+public class MergeSort<T extends Comparable<T >> {
+
+    void mergeSort(T[] array, int start, int end)
     {
-        // Find sizes of two subarrays to be merged
-        int n1 = m - l + 1;
-        int n2 = r - m;
-
-        /* Create temp arrays */
-        int L[] = new int [n1];
-        int R[] = new int [n2];
-
-        /*Copy data to temp arrays*/
-        for (int i=0; i<n1; ++i)
-            L[i] = arr[l + i];
-        for (int j=0; j<n2; ++j)
-            R[j] = arr[m + 1+ j];
-
-
-        /* Merge the temp arrays */
-
-        // Initial indexes of first and second subarrays
-        int i = 0, j = 0;
-
-        // Initial index of merged subarry array
-        int k = l;
-        while (i < n1 && j < n2)
+        // base case
+        if (start < end)
         {
-            if (L[i] <= R[j])
-            {
-                arr[k] = L[i];
-                i++;
-            }
-            else
-            {
-                arr[k] = R[j];
-                j++;
-            }
-            k++;
-        }
+            // find the middle point
+            int middle = (start + end) / 2;
 
-        /* Copy remaining elements of L[] if any */
-        while (i < n1)
-        {
-            arr[k] = L[i];
-            i++;
-            k++;
-        }
+            mergeSort(array, start, middle); // sort first half
+            mergeSort(array, middle + 1, end);  // sort second half
 
-        /* Copy remaining elements of R[] if any */
-        while (j < n2)
-        {
-            arr[k] = R[j];
-            j++;
-            k++;
+            // merge the sorted halves
+            merge(array, start, middle, end);
         }
     }
 
-    // Main function that sorts arr[l..r] using
-    // merge()
-    void sort(int arr[], int l, int r)
+    // merges two subarrays of array[].
+    void merge(T[] array, int start, int middle, int end)
     {
-        if (l < r)
+        T[] leftArray  = (T[]) new Comparable[middle - start + 1];
+        T[] rightArray = (T[]) new Comparable[end - middle];
+
+        // fill in left array
+        for (int i = 0; i < leftArray.length; ++i)
+            leftArray[i] = array[start + i];
+
+        // fill in right array
+        for (int i = 0; i < rightArray.length; ++i)
+            rightArray[i] = array[middle + 1 + i];
+
+        /* Merge the temp arrays */
+
+        // initial indexes of first and second subarrays
+        int leftIndex = 0, rightIndex = 0;
+
+        // the index we will start at when adding the subarrays back into the main array
+        int currentIndex = start;
+
+        // compare each index of the subarrays adding the lowest value to the currentIndex
+        while (leftIndex < leftArray.length && rightIndex < rightArray.length)
         {
-            // Find the middle point
-            int m = (l+r)/2;
-
-            // Sort first and second halves
-            sort(arr, l, m);
-            sort(arr , m+1, r);
-
-            // Merge the sorted halves
-            merge(arr, l, m, r);
+            if (leftArray[leftIndex].compareTo(rightArray[rightIndex]) <= 0)
+            {
+                array[currentIndex] = leftArray[leftIndex];
+                leftIndex++;
+            }
+            else
+            {
+                array[currentIndex] = rightArray[rightIndex];
+                rightIndex++;
+            }
+            currentIndex++;
         }
+
+        // copy remaining elements of leftArray[] if any
+        while (leftIndex < leftArray.length) array[currentIndex++] = leftArray[leftIndex++];
+
+        // copy remaining elements of rightArray[] if any
+        while (rightIndex < rightArray.length) array[currentIndex++] = rightArray[rightIndex++];
     }
 }

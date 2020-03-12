@@ -11,8 +11,12 @@ public class MergeSort<T extends Comparable<T >> {
             // find the middle point
             int middle = (start + end) / 2;
 
-            mergeSort(array, start, middle); // sort first half
-            mergeSort(array, middle + 1, end);  // sort second half
+            if(!isSorted(array, start, middle)){
+                mergeSort(array, start, middle); // sort first half
+            }
+            if (!isSorted(array, middle + 1, end)) {
+                mergeSort(array, middle + 1, end);  // sort second half
+            }
 
             // merge the sorted halves
             merge(array, start, middle, end);
@@ -62,5 +66,17 @@ public class MergeSort<T extends Comparable<T >> {
 
         // copy remaining elements of rightArray[] if any
         while (rightIndex < rightArray.length) array[currentIndex++] = rightArray[rightIndex++];
+    }
+
+
+    public boolean isSorted(T[] arr, int start, int end){
+        for (int i = start + 1; i <= end; i++)
+            if (lessThan(arr[i], arr[i-1])) return false;
+        return true;
+    }
+
+    // is v < w ?
+    private boolean lessThan(Comparable v, Comparable w) {
+        return v.compareTo(w) < 0;
     }
 }

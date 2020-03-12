@@ -41,6 +41,12 @@ public class IdentificationKey<T> {
             key.navigate(true);
             System.out.println(key.getSpecies());
         }
+
+        key.start();
+        System.out.println(key.getQuestion());
+        key.navigate(false);
+        key.navigate(true);
+        System.out.println(key.getSpecies().toString());
     }
 
     public void start(){
